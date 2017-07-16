@@ -15,17 +15,17 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Log in</div>
 				<div class="panel-body">
-					<form role="form">
+					<form runat ="server" role="form">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+                                <asp:TextBox runat ="server" ID ="loginID" placeholder ="Login ID"></asp:TextBox>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                <asp:TextBox runat="server" ID ="password" placeholder ="Password" TextMode="Password"></asp:TextBox>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    <asp:CheckBox runat="server" ID="rememberMe" Text ="Remember Me"/>
 								</label>
 							</div>
 							<a href="index.html" class="btn btn-primary">Login</a>
